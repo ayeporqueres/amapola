@@ -221,3 +221,11 @@ section p {
 	
 }
 
+@keyframes  animateportada {
+	0% { background-image: url(../img/portada1.jpg) }
+	25% { background-image: url(../img/portada2.png)}
+	50% {background-image: url(../img/portada3.png)}
+	75% {background-image: url(../img/portada4.png)}
+	100% {background-image: url(../img/portada5.png);}
+	
+}
