@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Smooch+Sans:wght@200;300;500&display=swap');
+
+* {
+	padding: 0%;
+	margin: 20px;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: rgba(255, 193, 59, 0.5);
+	background-image: url(../img/hoja.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/*selectores de etiqueta*/
+
+.botonera {
+padding: 5px 5px;
+margin: -100px 10px;
+display: flex;
+justify-content: space-between;
+
+}
+h1,
+h2 {
+	color: rgb(102, 125, 71);
+	font-family: Smooch Sans;
+	font-size: 4rem;
+	font-weight: 500;
+}
+
+
+h3 {
+	color: rgb(138, 92, 50);
+	font-family: Smooch Sans;
+	font-size: 3rem;
+	font-weight: 300;
+}
+
+section p {
+	
+	font-family: Roboto sans-serif;
+	font-size: 2rem;
+	font-weight: 200;
+	line-height: 2.4rem;
+	color: grey;
+	width: auto;
+	height: 200px;
+	overflow-x: auto;
+	margin: 20px 10px;
+	margin: 10px auto;
+	box-sizing: border-box;
+	border-style: solid;
+	border-color: rgb(138, 117, 65);
+}
+
+
+
+
+.encabezado nav ul {
+	list-style: none;
+	display: inline-block;
+	
+	
+
+}
+
+.encabezado nav ul li {
+	font-size: 4rem;
+	display: inline-block;
+}
+ 
+.encabezado nav ul li a {
+    text-decoration: beige;
+	color: grey;
+	font-family: Smooch Sans;
+	
+
+}
+
+.encabezado nav ul li a:hover {
+	font-weight: 500;
+	color: black;
+}
+
+
+/* .ofertas {
+
+	display: flex; flex-direction: row;
+	justify-content: center;
+	height: 300px;	
+} */
+
+/*selectores de clase*/
+
+.encabezado__img--fluid{
+	width: 1750px;
+}
+
+.textCenter {
+	text-align: center;
+	margin: 100px 10px;
+}
+
+.textRight {
+	text-align: right;
+}
+
+.textBold {
+	font-size: 20px;
+}
+
+
+.bgDark {
+	background-color: rgba(204, 186, 139, 0.8);   
+	margin: -50px 10px;
+}   
+
+
+
+.pie {
+	padding: 30px 0;
+}
+
+.pie h2{
+	font-size: 2rem;
+	text-align: center;
+	display: block;
+}
+
+
+.pie div {
+	
+	display: flex;
+	justify-content: center;	
+}
+
+.amapola {
+	height: 200px;
+	width: 200px;
+	padding: 10px 10px;
+	margin: -30px 10px;
+
+}
+
+/*GRID AREAS*/
+
+/* Nombrar Areas*/
+.ofertas{
+	grid-area: promociones;
+}
+.ofertas{
+	display: grid;
+ 
+	/* Grid Areas*/
+	grid-template-areas: 
+	"promociones" /*fila 1*/
+     ;
+	 grid-template-columns: 1fr 1fr 1fr 1fr;
+	 grid-template-rows: 1fr;
+	 gap: 5px;
+	 
+}
+
+
+.promocion {
+	width: 400px;
+	height: 300px;
+	border-style: solid;
+	border-color: rgb(199, 178, 121) ;
+    color: gray;
+
+}
+
+.ofertas{
+	display: flex;
+}
+
+  .ofertas figure{
+	text-align: center;
+
+}
+
+      .ofertas figure img {
+		border-top-left-radius:5px ;
+		border-top-right-radius: 5px;
+
+	    }
+
+       .ofertas figure figcaption{
+		font-size: 3rem;
+		color:rgb(138, 92, 50);
+		padding: 1px 0;
+		background-color:rgba(204, 186, 139, 0.8);
+	    }
+    
+	    .ofertas figure p.precio{
+		color: rgb(110, 104,87);
+		font-size: 2rem;
+		
+		background-color:rgba(204, 186, 139, 0.8) ;
+	    }
+
+/* animatediv */
+
+.portada{
+	height: 40vh;
+	background-image: url(../img/portada1.jpg);
+	animation-name: animateportada;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-delay: 5s;
+	animation-timing-function: ease;
+	background-size: cover;
+	
+}
+

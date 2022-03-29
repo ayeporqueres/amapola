@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Amapola Almacén Natural</title>
+</head>
+
+<body>
+	<header class="encabezado">
+		<img class="amapola"src="./img/logo2.png" alt="Logo de Amapola" >
+		<nav class="botonera">
+			<a href="index.html">
+				
+			</a>
+			<ul>
+				<li>
+					<a href="index.html">Inicio</a>
+				</li>
+				<li>
+					<a href="./secciones/productos.html">Productos</a>
+				</li>
+				<li>
+					<a href="./secciones/nosotros.html">Nosotros</a>
+				</li>
+				<li>
+					<a href="./secciones/contacto.html">Contacto</a>
+				</li>
+				<li>
+					<a href="./secciones/micuenta.html">Mi cuenta</a>
+				</li>
+			</ul>
+		</nav>
+		
+		
+	</header>
+
+	<div class="portada">
+	
+	</div>
+
+	<main>
+		<section >
+			<h1 class="textCenter"> Nosotros </h1>
+			<p class="bgDark" >
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo necessitatibus optio, dolorem ut
+				cupiditate! Fugiat non, natus ullam suscipit ab quos amet odio aut culpa dicta optio iusto accusamus
+				odit.
+				Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, magnam eveniet. Beatae iusto nemo
+				voluptatum ea odio dicta, qui aspernatur accusamus fugiat consequuntur minus, incidunt fuga, eum
+				necessitatibus nam. Necessitatibus.
+			</p>
+		</section>
+	</main>
+	<h2 class="textCenter"> Ofertas </h2>
+
+	<div class="ofertas"> 
+		<figure>
+		   <img class="promocion"	src="./img/nueces.png" alt="Oferta de nueces">
+		   <figcaption class="nombre"> Nueces mariposa</figcaption>
+		   <p class="precio">1kg $1990</p>
+	    </figure>
+
+		<figure>
+          <img class="promocion"  src="./img/aritosfrutales.jpg" alt="Oferta de aritosfrutales">
+		  <figcaption class="nombre">Aritos frutales </figcaption>
+		  <p class="precio">1kg $510</p>
+	    </figure>
+
+        <figure>
+		  <img class="promocion"  src="./img/chia.jpg" alt="Oferta de chia">
+		  <figcaption class="nombre"> Chía</figcaption>
+		  <p class="precio"> 1kg $1200</p>
+	    </figure>
+
+         <figure>
+		  <img class="promocion"  src="./img/durazno.jpg" alt="Oferta de durazno">
+		  <figcaption class="nombre"> Duraznos deshidratados </figcaption>
+		  <p class="precio">1kg $1300</p>
+	     </figure>
+	</div>
+
+	<section>
+		<article class="Registrate en Amapola">
+			<h3 class="Registrate en Amapola__titulo--md"> Registrate en Amapola </h3>
+			<!-- inicia el form -->
+			<form action="envio.php" method="post" id="mi cuenta">
+				<fieldset>
+					<legend>Crea una cuenta</legend>
+					<label for="nombre">Nombre y Apellido</label>
+					<input type="text" placeholder="Valeria Ayelen Porqueres" name="nombre" id="nombre">
+					<br>
+					<label for="Nombre de usuario">Usuario</label>
+					<input type="text" placeholder="aye_porqueres" name="Usuario" id="Usuario">
+					<label for="Contraseña">Contraseña</label>
+					<input type="text" placeholder="8 caracteres" name="Contraseña" id="
+						contraseña">
+					<br>
+					<label for="email">Email</label>
+					<input type="email" placeholder="mail@mail.com" name="email" id="email">
+					<input type="submit" value="Enviar">
+				</fieldset>
+			</form>
+
+			<h3 class="contactanos__titulo--md"> Contactanos </h3>
+
+			<form action="envio.php" method="post" id="contacto">
+				<fieldset>
+					<legend>Datos personales</legend>
+					<label for="nombre"> Nombre y apellido</label>
+					<input type="text" placeholder="Valeria Ayelen Porqueres" name="nombre" id="nombre">
+					<br>
+					<label for="email">Email</label>
+					<input type="text" placeholder="mail@mail.com" name="email" id="email">
+					<br>
+					<label for="mensaje">Deja tu mensaje</label> <br>
+					<textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+					<input type="reset" value="Cancelar">
+					<input type="submit" value="Enviar">
+				</fieldset>
+
+			</form>
+			<!-- cierra form -->
+
+		</article>
+		<article>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25512.186013327362!2d-60.17339322379444!3d-36.937611612749215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95943e442d046b11%3A0x4d2c9b48b0013bf8!2sSierras%20Bayas%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1645721128075!5m2!1ses!2sar"
+				width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>" frameborder="0">
+			</iframe>
+
+		</article>
+
+	</section>
+
+	<footer class="pie">
+		<h2> Redes sociales</h2>
+		<div>
+			<img src="https://img.icons8.com/fluency/48/000000/facebook.png"  />
+		    <img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"  />
+		</div>
+	</footer>
+
+</body>
+
+</html>
