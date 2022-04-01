@@ -1,8 +1,10 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Smooch+Sans:wght@200;300;500&display=swap');
 
 * {
 	padding: 0%;
-	margin: 20px;
+	margin: 0%;
 	box-sizing: border-box;
 }
 
@@ -18,15 +20,6 @@ body {
 	background-attachment: fixed;
 }
 
-/*selectores de etiqueta*/
-
-.botonera {
-padding: 5px 5px;
-margin: -100px 10px;
-display: flex;
-justify-content: space-between;
-
-}
 h1,
 h2 {
 	color: rgb(102, 125, 71);
@@ -61,51 +54,30 @@ section p {
 }
 
 
+.colornav{
+	background-color: rgba(204, 186, 139, 0.8);
 
+ } 
 
-.encabezado nav ul {
-	list-style: none;
-	display: inline-block;
-	
-	
-
-}
-
-.encabezado nav ul li {
+.navbar-nav a{
 	font-size: 4rem;
-	display: inline-block;
-}
- 
-.encabezado nav ul li a {
-    text-decoration: beige;
-	color: grey;
 	font-family: Smooch Sans;
-	
-
+	color: grey;
+	text-decoration: beige;
+	justify-content: end;
 }
 
-.encabezado nav ul li a:hover {
-	font-weight: 500;
-	color: black;
-}
-
-
-/* .ofertas {
+.ofertas {
 
 	display: flex; flex-direction: row;
 	justify-content: center;
 	height: 300px;	
-} */
-
-/*selectores de clase*/
-
-.encabezado__img--fluid{
-	width: 1750px;
-}
+} 
 
 .textCenter {
 	text-align: center;
 	margin: 100px 10px;
+	font-size: 6rem;
 }
 
 .textRight {
@@ -221,11 +193,3 @@ section p {
 	
 }
 
-@keyframes  animateportada {
-	0% { background-image: url(../img/portada1.jpg) }
-	25% { background-image: url(../img/portada2.png)}
-	50% {background-image: url(../img/portada3.png)}
-	75% {background-image: url(../img/portada4.png)}
-	100% {background-image: url(../img/portada5.png);}
-	
-}
