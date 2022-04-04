@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Smooch+Sans:wght@200;300;500&display=swap');
 
 * {
-	padding: 0%;
-	margin: 0%;
+	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
 }
 
@@ -97,7 +97,9 @@ section p {
 
 
 .pie {
-	padding: 30px 0;
+	text-align: center;
+	padding: 0;
+	background-color: rgba(204, 186, 139, 0.8);
 }
 
 .pie h2{
@@ -113,13 +115,13 @@ section p {
 	justify-content: center;	
 }
 
-.amapola {
+/* .amapola {
 	height: 200px;
 	width: 200px;
 	padding: 10px 10px;
 	margin: -30px 10px;
 
-}
+} */
 
 /*GRID AREAS*/
 
@@ -181,7 +183,7 @@ section p {
 
 /* animatediv */
 
-.portada{
+/* .portada{
 	height: 40vh;
 	background-image: url(../img/portada1.jpg);
 	animation-name: animateportada;
@@ -191,5 +193,109 @@ section p {
 	animation-timing-function: ease;
 	background-size: cover;
 	
+} */
+
+/*MEDIA QUERIES*/
+
+.barra{
+	grid-area: header ;
 }
+
+.portadas{
+	grid-area: carrusel;
+}
+
+.nosotros{
+	grid-area: main;
+}
+
+.promo{
+	grid-area: fotos;
+}
+
+.formularios{
+	grid-area: registro;
+}
+
+.mapa {
+	grid-area: sucursal;
+}
+
+.pie {
+	grid-area: iconos ;
+} 
+
+@media(min-width: 400px) {
+    .contenedor{
+	 display: grid;
+	 gap: 20px;
+     grid-template-areas: 
+     "header"
+	 "carrusel"
+	 "main"
+	 "registro"
+	 "sucursal"
+	 "iconos"
+    } 
+}
+
+@media (min-width: 500px) {
+
+	.contenedor{
+		grid-template-columns: 1fr 2fr;
+		grid-template-areas:
+		"header   header"
+		"carrusel carrusel"
+		"main     fotos"
+        "registro sucursal"
+		"iconos   iconos"
+
+
+	}
+ .navbar-nav{
+	font-size: 2rem;
+	font-family: Smooch Sans;
+	color: grey;
+	text-decoration: beige;
+	justify-content: center;
+ }
+	
+}
+
+
+@media (min-width: 1024px) {
+
+	.contenedor{
+		grid-template-columns: 1fr 4fr 1fr;
+		grid-template-areas:
+		"header   header   header"
+		"carrusel carrusel carrusel"
+		"main     main     main"
+		"fotos    fotos    fotos"
+        "registro sucursal sucursal"
+		"iconos   iconos   iconos"
+
+
+	}
+    .navbar-nav{
+	    font-size: 4rem;
+	    font-family: Smooch Sans;
+	    color: grey;
+	    text-decoration: beige;
+	    justify-content: end;
+    }
+}
+
+
+/*pseudoclases*/
+
+a:link{
+	color: blue
+}
+
+a:visited{
+	color:blueviolet
+}
+
+
 
